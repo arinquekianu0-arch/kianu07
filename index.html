@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Recipes</title>
+</head>
+<body>
+    <header>
+        <h1>Odin Recipes</h1>
+        <p>Simple and delicious recipes you can make at home.</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="pancakes.html">Pancakes</a> |
+            <a href="chicken-adobo.html">Chicken Adobo</a> |
+            <a href="spaghetti.html">Spaghetti</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Our Recipes</h2>
+            <ul>
+                <li><a href="pancakes.html">Easy Pancakes</a></li>
+                <li><a href="chicken-adobo.html">Filipino Chicken Adobo</a></li>
+                <li><a href="spaghetti.html">Simple Spaghetti</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recipe Information</h2>
+            <table border="1">
+                <caption>Preparation and cooking time</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Recipe</th>
+                        <th scope="col">Preparation Time</th>
+                        <th scope="col">Cooking Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Easy Pancakes</td>
+                        <td>10 minutes</td>
+                        <td>15 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Adobo</td>
+                        <td>15 minutes</td>
+                        <td>45 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Simple Spaghetti</td>
+                        <td>10 minutes</td>
+                        <td>25 minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <section>
+            <h2>Send Us Your Feedback</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="visitor-name">Your name:</label><br>
+                    <input type="text" id="visitor-name" name="visitor-name" required>
+                </p>
+                <p>
+                    <label for="visitor-email">Your email:</label><br>
+                    <input type="email" id="visitor-email" name="visitor-email" required>
+                </p>
+                <p>
+                    <label for="favorite-recipe">Favorite recipe:</label><br>
+                    <select id="favorite-recipe" name="favorite-recipe">
+                        <option value="pancakes">Easy Pancakes</option>
+                        <option value="adobo">Chicken Adobo</option>
+                        <option value="spaghetti">Simple Spaghetti</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Your feedback:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                </p>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <p><small>This is an HTML demonstration form. It will need a server to save submitted feedback.</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Odin Recipes</p>
+    </footer>
+</body>
+</html>
